@@ -1,6 +1,6 @@
 sudo: false
 language: python
-script: zip -r test.zip README.md
+script: zip -r test$(hg log --template '{latesttag}' -r .).zip README.md
 deploy:
   provider: releases
   api_key:
