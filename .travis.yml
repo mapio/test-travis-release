@@ -1,3 +1,4 @@
+language: python
 script: zip -a test.zip README.md
 deploy:
   provider: releases
@@ -5,6 +6,6 @@ deploy:
     secure: Lhv9lOJ7jqbUtL79wQV7FX9fgvcJxX4s1/9DM9dHEcx3E8KdwOPEYGWrFqkhkxnJJHbdH/bu37cXi5/tXfH/HJrhrkfDuuQ0WdcKWl+/TUUzVqnqGskkHJ0BQcnG8m/mG8ZK1U77NGok359vJodJXBXR8zxuqFt+UNMGXjZr35U=
   file: test.zip
   on:
-  	tags: true
+    tags: true
     repo: mapio/test-travis-release
     all_branches: true
